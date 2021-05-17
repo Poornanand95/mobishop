@@ -91,8 +91,8 @@ function AddItems() {
           <input
             className='add'
             type='submit'
-            value='Add'
-            onClick={() =>
+            value='Add Item'
+            onClick={(e) =>
               setItem({
                 mobiName,
                 brandName,
