@@ -1,9 +1,11 @@
-.add-form-container{
+.signin-form-container{
     display: flex;
     justify-content: center;
     margin: 2rem;
 }
-.add-form{
+
+
+.signin-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,20 +16,33 @@
     box-shadow: 9px 8px 5px 0px rgba(60,123,212,0.75);
 -webkit-box-shadow: 9px 8px 5px 0px rgba(60,123,212,0.75);
 -moz-box-shadow: 9px 8px 5px 0px rgba(60,123,212,0.75);
-   
 }
 
-.label-input{
+.signin-label-input{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: .25rem;
 }
 
-.add:hover{
+.signin-signup-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin: .5rem;
+    max-width: 10rem;
+}
+
+.btn:hover{
     transition: 300ms;
     font-weight: bold;
     background-color: rgb(122, 122, 168);
     color: white;
     cursor: pointer;
 }
+.signin-label-input{
+    text-decoration: none;
+    }
+
+
