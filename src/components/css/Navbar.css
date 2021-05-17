@@ -1,0 +1,60 @@
+.navbar{
+    background-color: rgb(191, 191, 243);
+    box-shadow: 0px 0px 3px gray;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.nav-items{
+    margin: 1rem;
+}
+
+.sign-in{
+    /* display: none; */
+}
+
+.logo{
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+}
+.logo i {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: rgb(11, 87, 90);
+}
+.logo i:hover {
+   cursor: pointer;
+}
+
+.logo p{
+    font-size: 1.2rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.sign-in, .sign-out{
+    margin: none;
+    padding: 0.5rem;
+    background-color: rgb(99, 123, 167);
+    border-radius: .25rem;
+    border: none;
+    height: 1.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+}
+.sign-in:hover, .sign-out:hover{
+   
+    background-color: rgb(125, 143, 177);
+    color: cornsilk;
+    cursor: pointer;
+   
+}

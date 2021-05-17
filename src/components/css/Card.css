@@ -1,0 +1,57 @@
+ul{
+    list-style: none;
+}
+
+.container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+.card{
+    border: none black;
+    max-width: 25rem;
+    height: 30rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 5px 0px rgba(56,87,11,0.75);
+-webkit-box-shadow: 2px 3px 5px 0px rgba(56,87,11,0.75);
+-moz-box-shadow: 2px 3px 5px 0px rgba(56,87,11,0.75);
+background-color: rgb(248, 246, 244);
+}
+
+
+.mobi-icon{
+    font-size: 3.5rem;
+    margin:  0 1.5rem;
+}
+
+.mobi-name{
+    font-weight: bold;
+}
+.mobi-specifications{
+    background-color: rgb(87, 87, 206);
+    height: 76.5%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.mobi-branding{
+    background-color: rgb(248, 246, 244);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    }
+
+.mobi-specifications{
+    padding:   1rem;
+    color: ivory;
+}
+
+.mobi-specs{
+    font-weight: bold;
+    font-size: 1.2rem;
+   
+}
+
+
+
