@@ -1,0 +1,38 @@
+.filter-container{
+    display: flex;
+    padding: 1rem;
+    margin: .5rem;
+    justify-content: space-between;
+    
+}
+
+label{
+    margin: 1rem;
+}
+
+.brand-select, .price-select{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.brand-select{
+   margin-left: 10rem;
+   
+}
+
+.price-select{
+   margin-right: 10rem;
+}
+
+input{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .35rem;
+    width: 15rem;
+}
+
+select{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .35rem;
+    width: 15rem;
+}

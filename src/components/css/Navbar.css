@@ -10,7 +10,11 @@
 }
 
 .nav-items{
-    margin: 1rem;
+    text-decoration: none;
+    margin: 1rem 1.5rem;
+}
+button{
+    margin: 0 1rem;
 }
 
 .sign-in{
@@ -39,7 +43,7 @@
     margin-bottom: 0%;
 }
 
-.sign-in, .sign-out{
+.sign-in, .sign-out, .add-items{
     margin: none;
     padding: 0.5rem;
     background-color: rgb(99, 123, 167);
@@ -50,11 +54,18 @@
     display: flex;
     align-items: center;
     transition: 300ms;
+    
+   
 }
-.sign-in:hover, .sign-out:hover{
+.sign-in:hover, .sign-out:hover, .add-items:hover{
    
     background-color: rgb(125, 143, 177);
     color: cornsilk;
     cursor: pointer;
    
+}
+
+
+Link{
+    text-decoration: none;
 }
