@@ -25,16 +25,6 @@ function AddItems() {
       localStorage.setItem(randomNum, JSON.stringify(item));
     }
   }
-  useEffect(() => {}, [item]);
-
-  useEffect(() => {
-    console.log(item.mobiName);
-    console.log(item.brandName);
-    console.log(item.price);
-    console.log(item.mobiColor);
-    console.log(item.ram);
-    console.log(item.rom);
-  }, [item]);
 
   return (
     <div className='add-form-container'>
@@ -112,16 +102,6 @@ function AddItems() {
             value='Add Item'
             onClick={() => handleClick()}
             value='Add'
-            onClick={() =>
-              setItem({
-                mobiName,
-                brandName,
-                price,
-                mobiColor,
-                ram,
-                rom,
-              })
-            }
           />
         </div>
       </div>
