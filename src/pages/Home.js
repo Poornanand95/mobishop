@@ -8,18 +8,18 @@ function Home() {
   for (let i = 10; i < 100; i++) {
     // console.log(i);
     if (
-      JSON.parse(window.localStorage.getItem(i)) != {} &&
-      JSON.parse(window.localStorage.getItem(i)) != null
+      JSON.parse(window.localStorage.getItem(i)) != null &&
+      Object.keys(JSON.parse(window.localStorage.getItem(i))).length > 0
     ) {
       // console.log(JSON.parse(window.localStorage.getItem(i)));
       let obj = JSON.parse(window.localStorage.getItem(i));
-      console.log(typeof obj);
+      // console.log(typeof obj);
       // console.log(mobileArray);
       mobileArray.push(obj);
     }
   }
 
-  console.log(mobileArray);
+  // console.log(mobileArray);
   return (
     <Fragment>
       <Filter />
