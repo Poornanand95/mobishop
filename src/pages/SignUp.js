@@ -4,7 +4,7 @@ import fire from '../config/fire';
 
 import React, { Component } from 'react';
 
-export class SignUp extends Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
     this.signup = this.signup.bind(this);
@@ -84,5 +84,4 @@ export class SignUp extends Component {
     );
   }
 }
-
 export default SignUp;

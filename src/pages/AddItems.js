@@ -27,6 +27,15 @@ function AddItems() {
   }
   useEffect(() => {}, [item]);
 
+  useEffect(() => {
+    console.log(item.mobiName);
+    console.log(item.brandName);
+    console.log(item.price);
+    console.log(item.mobiColor);
+    console.log(item.ram);
+    console.log(item.rom);
+  }, [item]);
+
   return (
     <div className='add-form-container'>
       <div className='add-form'>
@@ -38,7 +47,6 @@ function AddItems() {
             onChange={(e) => {
               e.preventDefault();
               setMobiName(e.target.value);
-              // console.log(e.target.value);
             }}
           />
         </div>
@@ -103,6 +111,17 @@ function AddItems() {
             type='submit'
             value='Add Item'
             onClick={() => handleClick()}
+            value='Add'
+            onClick={() =>
+              setItem({
+                mobiName,
+                brandName,
+                price,
+                mobiColor,
+                ram,
+                rom,
+              })
+            }
           />
         </div>
       </div>

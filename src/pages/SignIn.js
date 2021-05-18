@@ -4,7 +4,7 @@ import '../components/css/SignIn.css';
 import React, { Component, Fragment } from 'react';
 import fire from '../config/fire';
 
-export class SignIn extends Component {
+class SignIn extends Component {
   constructor(props) {
     super(props);
     this.login = this.login.bind(this);
