@@ -1,7 +1,13 @@
 import React from 'react';
 import './css/Navbar.css';
 import { Link } from 'react-router-dom';
+
+import fire from '../config/fire';
+
 function Navbar() {
+  function logout() {
+    fire.auth().signOut();
+  }
   return (
     <div>
       <ul className='navbar'>
@@ -9,7 +15,7 @@ function Navbar() {
           <i class='fas fa-store'></i>
           <p>Mobi Shop</p>
         </Link>
-        <li className='nav-items user-name'>Hi, Poornanand</li>
+        <li className='nav-items user-name'>Hello Shopkeeper!</li>
         <li>
           <Link to='./AddItems' className='nav-items'>
             <button className='add-items'>Add Items</button>
@@ -17,14 +23,16 @@ function Navbar() {
         </li>
         <li>
           <Link to='/' className='nav-items'>
-            <button className='sign-out'>Sign Out</button>
+            <button onClick={logout} className='sign-out'>
+              Sign Out
+            </button>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to='/SignIn' className='nav-items'>
             <button className='sign-in'>Sign In</button>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

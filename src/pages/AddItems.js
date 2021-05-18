@@ -10,19 +10,22 @@ function AddItems() {
   const [item, setItem] = useState({});
 
   function handleClick(e) {
-    setItem({
-      mobiName,
-      brandName,
-      price,
-      mobiColor,
-      ram,
-      rom,
-    });
+    // e.preventDefault();
+
+    {
+      setItem({
+        mobiName,
+        brandName,
+        price,
+        mobiColor,
+        ram,
+        rom,
+      });
+      let randomNum = Math.floor(Math.random() * 90) + 10;
+      localStorage.setItem(randomNum, JSON.stringify(item));
+    }
   }
-  useEffect(() => {
-    let randomNum = Math.floor(Math.random() * 90) + 10;
-    localStorage.setItem(randomNum, JSON.stringify(item));
-  }, [item]);
+  useEffect(() => {}, [item]);
 
   return (
     <div className='add-form-container'>
@@ -35,6 +38,7 @@ function AddItems() {
             onChange={(e) => {
               e.preventDefault();
               setMobiName(e.target.value);
+              // console.log(e.target.value);
             }}
           />
         </div>
