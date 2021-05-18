@@ -9,13 +9,19 @@ function AddItems() {
   const [rom, setRom] = useState('');
   const [item, setItem] = useState({});
 
+  function handleClick(e) {
+    setItem({
+      mobiName,
+      brandName,
+      price,
+      mobiColor,
+      ram,
+      rom,
+    });
+  }
   useEffect(() => {
-    console.log(item.mobiName);
-    console.log(item.brandName);
-    console.log(item.price);
-    console.log(item.mobiColor);
-    console.log(item.ram);
-    console.log(item.rom);
+    let randomNum = Math.floor(Math.random() * 90) + 10;
+    localStorage.setItem(randomNum, JSON.stringify(item));
   }, [item]);
 
   return (
@@ -92,16 +98,7 @@ function AddItems() {
             className='add'
             type='submit'
             value='Add Item'
-            onClick={(e) =>
-              setItem({
-                mobiName,
-                brandName,
-                price,
-                mobiColor,
-                ram,
-                rom,
-              })
-            }
+            onClick={() => handleClick()}
           />
         </div>
       </div>
