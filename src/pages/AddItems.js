@@ -10,7 +10,6 @@ function AddItems() {
   const [item, setItem] = useState({});
 
   function handleClick(e) {
-    // e.preventDefault();
     {
       setItem({
         mobiName,
@@ -35,6 +34,7 @@ function AddItems() {
             id='add-mobi-name'
             onChange={(e) => {
               e.preventDefault();
+
               setMobiName(e.target.value);
             }}
           />
@@ -46,6 +46,7 @@ function AddItems() {
             id='add-mobi-brand-name'
             onChange={(e) => {
               e.preventDefault();
+
               setBrandName(e.target.value);
             }}
           />
@@ -57,6 +58,7 @@ function AddItems() {
             id='add-mobi-price'
             onChange={(e) => {
               e.preventDefault();
+
               setPrice(e.target.value);
             }}
           />
@@ -68,6 +70,7 @@ function AddItems() {
             id='add-mobi-color'
             onChange={(e) => {
               e.preventDefault();
+
               setMobiColor(e.target.value);
             }}
           />
@@ -79,6 +82,7 @@ function AddItems() {
             id='add-mobi-ram'
             onChange={(e) => {
               e.preventDefault();
+
               setRam(e.target.value);
             }}
           />
@@ -90,6 +94,7 @@ function AddItems() {
             id='add-mobi-rom'
             onChange={(e) => {
               e.preventDefault();
+
               setRom(e.target.value);
             }}
           />

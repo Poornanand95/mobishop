@@ -54,6 +54,3 @@ export class App extends Component {
 }
 
 export default App;
-
-// <Route path='/SignIn' exact component={SignIn} />
-// <Route path='/SignUp' exact component={SignUp} />
